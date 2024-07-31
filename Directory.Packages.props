@@ -4,7 +4,7 @@
 
     <MicrosoftCodeAnalysisPublicApiAnalyzersVersion Condition="'$(MicrosoftCodeAnalysisPublicApiAnalyzersVersion)' == ''">3.3.4</MicrosoftCodeAnalysisPublicApiAnalyzersVersion>
     <NewtonsoftJsonPackageVersion Condition="'$(NewtonsoftJsonPackageVersion)' == ''">13.0.3</NewtonsoftJsonPackageVersion>
-    <SystemTextJsonVersion Condition="'$(SystemTextJsonVersion)' == ''">7.0.3</SystemTextJsonVersion>
+    <SystemTextJsonVersion Condition="'$(SystemTextJsonVersion)' == ''">8.0.4</SystemTextJsonVersion>
     <SystemPackagesVersion Condition="'$(SystemPackagesVersion)' == ''">4.3.0</SystemPackagesVersion>
     <SystemCommandLineVersion Condition="'$(SystemCommandLineVersion)' == ''">2.0.0-beta4.23307.1</SystemCommandLineVersion>
     <MSTestPackageVersion>3.4.3</MSTestPackageVersion>
@@ -44,8 +44,12 @@
     <PackageVersion Include="Microsoft.Build.Tasks.Core" Version="$(MicrosoftBuildVersion)" />
     <PackageVersion Include="Microsoft.Build.Utilities.Core" Version="$(MicrosoftBuildVersion)" />
     <PackageVersion Include="Microsoft.CodeAnalysis" Version="4.3.1" />
+    <PackageVersion Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.4" />
     <PackageVersion Include="Microsoft.CodeAnalysis.Common" Version="4.3.1" />
     <PackageVersion Include="Microsoft.CodeAnalysis.CSharp" Version="4.3.1" />
+    <packageVersion Include="Microsoft.CodeAnalysis.CSharp.Analyzer.Testing" Version="1.1.2" />
+    <PackageVersion Include="Microsoft.CodeAnalysis.CSharp.CodeRefactoring.Testing" Version="1.1.2" />
+    <PackageVersion Include="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="4.3.1" />
     <PackageVersion Include="Microsoft.CodeAnalysis.Features" Version="4.3.1" />
     <PackageVersion Include="Microsoft.CodeAnalysis.Workspaces.Common" Version="4.3.1" />
     <PackageVersion Include="Microsoft.CSharp" Version="$(SystemPackagesVersion)" />
