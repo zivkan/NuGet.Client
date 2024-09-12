@@ -2,5 +2,6 @@
   <Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))" />
   <PropertyGroup>
     <SignWithMicrosoftKey Condition="'$(SignWithMicrosoftKey)' == ''">true</SignWithMicrosoftKey>
+    <InsertsIntoDotnetSdk Condition=" '$(MSBuildProjectFile)' == 'NuGet.PackageManagement.csproj' ">true</InsertsIntoDotnetSdk>
   </PropertyGroup>
 </Project>
